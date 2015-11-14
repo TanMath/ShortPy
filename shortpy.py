@@ -6,7 +6,7 @@ def input():
     return "input()"
 def function(name,arg,code):
     variables='qrstuvwxyz'
-    return "def "+"+name+"("+ ','.join(variables[0:n])+"):\n\t"+code
+    return "def "+name+"("+ ','.join(variables[0:n])+"):\n\t"+code
 def print(statement):
     return "print"+statement
 
