@@ -11,10 +11,14 @@ def function(name,arg,code):
     return "def "+name+"("+ ','.join(variables[0:n])+"):\n\t"+code
 def print(i):
     if program[i+1]='"':
-        for i,j in enumerate(program)
-            j #work on this
-        
-    
+        s = ""
+        i+=1
+        while i<len(program) and program[i]!='"':
+                    s+=program[i]
+                    i+=1
+        return "print '"+s+"'"
+    else: #Assume variable is one character
+        return "print"+program[i+1]
 funcdict={}
 
 programfile=open("program.py", "w+")
